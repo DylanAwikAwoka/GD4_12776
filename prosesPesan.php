@@ -2,7 +2,7 @@
     $nama = $_POST["namaPembeli"];
     $konser = $_POST["pilihKonser"];
     $jumlah = $_POST["jumlahTiket"];
-    $folderTujuan = "bukti_bayar/";
+    $folderTujuan = "buktiBayar/";
     $namaFile = basename($_FILES["buktiBayar"]["name"]);
     $alamatFile = $folderTujuan . $namaFile;
 
