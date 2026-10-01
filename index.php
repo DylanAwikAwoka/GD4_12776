@@ -32,8 +32,18 @@
         ];
     ?>
 
+    <?php
+        $hargaAsli = $daftarKonser[0]["harga"];
+        $persenDiskon = 20;
+        $hargaSetelahDiskon = $hargaAsli - ($hargaAsli * $persenDiskon / 100);
+        $tiketMasihAda = $daftarKonser[0]["harga"] > 0;
+    ?>
+
+    <p>Harga Asli: Rp. <?php echo $hargaAsli; ?></p>
+    <p>Setelah Diskon: Rp. <?php echo $hargaSetelahDiskon; ?></p>
+
     <p>Konser: <?php echo $daftarKonser[0]["nama"]; ?></p>
-    <p>Harga: Rp<?php echo $daftarKonser[0]["harga"]; ?></p> 
+    <p>Harga: Rp. <?php echo $daftarKonser[0]["harga"]; ?></p> 
     <p>Sisa Tiket: <?php echo $daftarKonser[0]["sisaTiket"]; ?></p>  
 
 </body>
