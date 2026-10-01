@@ -63,7 +63,6 @@
     <p>Setelah Diskon: Rp. <?php echo $hargaSetelahDiskon; ?></p>
     <p>Konser: <?php echo $daftarKonser[0]["nama"]; ?></p>
     <p>Harga: Rp. <?php echo $daftarKonser[0]["harga"]; ?></p> 
-    <p>Sisa Tiket: <?php echo $daftarKonser[0]["sisaTiket"]; ?></p>  
     <p>Status: <?php echo $statusTiket; ?></p>
     <p>Kategori: <?php echo $badge; ?></p>
 
